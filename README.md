@@ -49,4 +49,97 @@ viii. *Tick both the check boxes, then apply and OK*
 
 ![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/7f439f09f50344bbf10bf757cba7b0a3adf44c3d/7.PNG)
 
+## Step - 2
+
+i. *Create a storage Account*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/a14ded4e88f4c196046705de3c9786a40452d40e/8.PNG)
+
+ii. *Create file share*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/9.PNG)
+
+iii. *Configure the basic details of share file, and click on create*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/10.PNG)
+
+## Step - 3
+
+i. *Now, Search for fileSync*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/11.PNG)
+
+ii. *Configure the basic, and hit create*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/12.PNG)
+
+iii. *Once it is created , go to recourse, then go into sync group to create sync group*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/13.PNG)
+
+iv. *Select your storage account and azure file share that you created*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/14.PNG)
+
+v. *Once you created Sync group go to Registered Server to download a file Sync Agent That will help to create a communication between on-prem and azure*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/15.PNG)
+
+vi. *Download the agent version based on the windows version you have selected during the creation of virtual machine*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/16.PNG)
+
+vii. *Once the agent is downloaded copy it and paste into your virtual machine and install it (just click next,next)*
+
+## Step - 4
+
+i. *Go into Server Manager , local server and turnn off the Enchanced Security Configuration*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/18.PNG)
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/17.PNG)
+
+ii. *Once the Installation of the agent is done click on the sign in button*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/19.PNG)
+
+ii. *CLick on the add button*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/20.PNG)
+
+iii. *again click on the add button and close*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/21.PNG)
+
+iv. *Provide your Azure gmail and Passowrd*
+
+v. *Then select your subscription , resource group and Storage sync service then click on register buton*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/22.PNG)
+
+## Step - 5
+
+i. *Once Everything is done , check the Registered servers there will be your VM name , that means your VM is connected sucessfully*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/23.PNG)
+
+ii. *Now open the Sync group , then click on your created Sync group , Click on Add server Endpoint*
+
+iii. *Provide your VM name , Path of the folder that you want to be sync with the azure*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/24.PNG)
+
+iv. *Now you will see the folder is successfully connected with the azure portal*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/25.PNG)
+
+v. *To confirm the successfull connection , create some files and folders inside the folder of which you have given the path*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/26.PNG)
+
+vi. *Now go into your file share(azure portal) , click on Browse , you will the files and folder that are created on the VM are in azure portal this means the Sync is succesfully done*
+
+![image alt](https://github.com/Imaad-Mukadam/Azure-File-Sync/blob/796e028eb732c899273f510ed1ad23f3fc829600/27.PNG)
+
+
 
